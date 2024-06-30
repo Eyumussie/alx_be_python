@@ -11,7 +11,7 @@ def main():
             else:
                 Reminder += " This task does not require immediate attention."
         case 'medium':
-           Reminder = f"Task '{task}' is of '{priority}' priority."
+            Reminder = f"Task '{task}' is of '{priority}' priority."
             if time_bound == 'yes':
                 Reminder += " This task is time-bound and requires immediate attention today!"
             else:
@@ -25,7 +25,7 @@ def main():
         case _:
             Reminder = f"Task '{task}' has an unrecognized priority level."
     
-    print(Reminder :)
+    print(Reminder)
 
 if __name__ == "__main__":
     main()
