@@ -5,19 +5,19 @@ def main():
     
     match priority:
         case 'high':
-            Reminder = f"Task '{task}' is of high priority."
+            Reminder = f"Task '{task}' is of '{priority}' priority."
             if time_bound == 'yes':
                 Reminder += " This task is time-bound and requires immediate attention today!"
             else:
                 Reminder += " This task does not require immediate attention."
         case 'medium':
-            Reminder = f"Task '{task}' is of medium priority."
+           Reminder = f"Task '{task}' is of '{priority}' priority."
             if time_bound == 'yes':
                 Reminder += " This task is time-bound and requires immediate attention today!"
             else:
                 Reminder += " This task does not require immediate attention."
         case 'low':
-            Reminder = f"Task '{task}' is of low priority."
+            Reminder = f"Task '{task}' is of '{priority}' priority."
             if time_bound == 'yes':
                 Reminder += " This task is time-bound and requires immediate attention today!"
             else:
