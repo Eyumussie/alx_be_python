@@ -10,23 +10,23 @@ def main():
     
      match priority:
         case 'high':
-            print(f"- Task: {task} (Priority: {priority})")
+           reminder = f"Task '{task}' is of high priority."
             if time_bound == 'yes':
-                print("- This task requires immediate attention today!")
+                reminder += " This task is time-bound and requires immediate attention today!"
             else:
-                print("- This task does not require immediate attention.")
+                reminder += " This task is time-bound and requires immediate attention today!"
         case 'medium':
             print(f"- Task: {task} (Priority: {priority})")
             if time_bound == 'yes':
-                print("- This task requires immediate attention today!")
+                reminder += " This task is time-bound and requires immediate attention today!"
             else:
-                print("- This task does not require immediate attention.")
+                reminder += " This task is time-bound and requires immediate attention today!"
         case 'low':
             print(f"- Task: {task} (Priority: {priority})")
-            if time_bound == 'yes':
-                print("- This task requires immediate attention today!")
+             if time_bound == 'yes':
+                reminder += " This task is time-bound and requires immediate attention today!"
             else:
-                print("- This task does not require immediate attention.")
+                reminder += " This task is time-bound and requires immediate attention today!"
         case _:
             print("- Invalid priority level entered.")
 
