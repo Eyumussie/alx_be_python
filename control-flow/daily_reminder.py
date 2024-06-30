@@ -25,7 +25,7 @@ def main():
         case _:
             reminder = f"Task '{task}' has an unrecognized priority level."
     
-    print(reminder)
+    print(reminder :)
 
 if __name__ == "__main__":
     main()
