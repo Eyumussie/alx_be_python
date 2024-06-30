@@ -16,13 +16,13 @@ def main():
             else:
                 reminder += " This task is time-bound and requires immediate attention today!"
         case 'medium':
-            print(f"- Task: {task} (Priority: {priority})")
+            reminder = f"Task '{task}' is of medium priority."
             if time_bound == 'yes':
                 reminder += " This task is time-bound and requires immediate attention today!"
             else:
                 reminder += " This task is time-bound and requires immediate attention today!"
         case 'low':
-            print(f"- Task: {task} (Priority: {priority})")
+            reminder = f"Task '{task}' is of low priority."
              if time_bound == 'yes':
                 reminder += " This task is time-bound and requires immediate attention today!"
             else:
