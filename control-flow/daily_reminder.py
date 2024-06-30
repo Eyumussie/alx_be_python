@@ -8,25 +8,27 @@ def main():
     
     print("\nReminder:")
     
-    match priority:
-          match priority:
+     match priority:
         case 'high':
-            reminder = f"Task '{task}' is of high priority."
+            print(f"- Task: {task} (Priority: {priority})")
+            if time_bound == 'yes':
+                print("- This task requires immediate attention today!")
+            else:
+                print("- This task does not require immediate attention.")
         case 'medium':
-            reminder = f"Task '{task}' is of medium priority."
+            print(f"- Task: {task} (Priority: {priority})")
+            if time_bound == 'yes':
+                print("- This task requires immediate attention today!")
+            else:
+                print("- This task does not require immediate attention.")
         case 'low':
-            reminder = f"Task '{task}' is of low priority."
+            print(f"- Task: {task} (Priority: {priority})")
+            if time_bound == 'yes':
+                print("- This task requires immediate attention today!")
+            else:
+                print("- This task does not require immediate attention.")
         case _:
-            reminder = f"Task '{task}' has an unrecognized priority level."
-    
-    # Using if statement to modify the reminder based on time-bound status
-    if time_bound == 'yes':
-        reminder += " This task is time-bound and requires immediate attention today!"
-    else:
-        reminder += " This task does not have an immediate time constraint."
-    
-    # Print the customized reminder
-    print(reminder)
+            print("- Invalid priority level entered.")
 
 if __name__ == "__main__":
     main()
