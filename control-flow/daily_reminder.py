@@ -1,5 +1,5 @@
 def main():
-    task = input("Enter the task description: ")
+    task = input("Enter the your task : ")
     priority = input("priority(high, medium, low):")
     time_bound = input("Is it time-bound? (yes or no): ").lower()
     
