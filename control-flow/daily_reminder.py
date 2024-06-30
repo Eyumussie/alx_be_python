@@ -3,9 +3,6 @@ def main():
     priority = input("Priority (high/medium/low): ").lower()
     time_bound = input("Is it time-bound? (yes/no): ").lower()
     
-    print("\nReminder:")
-    
-    # Using match case to react differently based on priority
     match priority:
         case 'high':
             reminder = f"Task '{task}' is of high priority."
