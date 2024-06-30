@@ -1,9 +1,9 @@
 def main():
    
-   
-    Task = input("Enter the task description: ")
-    Priority = input(" Priority level (high, medium, low): ")
-    Time_bound = input("Is it time-bound? (yes or no): ").lower()
+    task = ( r"input\s*\(\s*['\"]Enter your task:\s*['\"]\s*\)")
+    Time_bound = ( r"input\s*\(\s*['\"]Is it time-bound\?\s*\(yes\/no\):\s*['\"]\s*\)" )
+   Priority = ( r"input\s*\(\s*['\"]Priority\s*\(high\/medium\/low\):\s*['\"]\s*\)" )
+
 
    
     match Priority:
