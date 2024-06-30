@@ -8,7 +8,7 @@ def main():
     
     print("\nReminder:")
     
-    match priority.lower():
+    match priority:
         case 'high':
             print(f"- Task: {task} (Priority: {priority})")
             if time_bound == 'yes':
