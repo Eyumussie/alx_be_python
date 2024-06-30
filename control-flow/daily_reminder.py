@@ -2,7 +2,6 @@ def main():
     task = input("Enter the task description: ")
     priority = input("Enter the priority level (high, medium, low): ")
     time_bound = input("Is the task time-bound? (yes or no): ").lower()
-    print("\nCustomized Reminder:")
     match priority:
         case "high":
             reminder = f"Task '{task}' is of high priority."
