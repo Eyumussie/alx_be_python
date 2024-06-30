@@ -1,8 +1,34 @@
 def main():
-   task = input("Enter task description: ")
 
-# Step 2: Get task priority
-priority = input("Enter task priority (high, medium, low): ")
+    task = input("Enter your task: ")
+   
+    priority = input("Priority (high/medium/low): ")
+  
+    time_bound = input("Is it time-bound? (yes/no): ").lower()
+    
+    print("\nReminder:")
+    
+    match priority.lower():
+        case 'high':
+            print(f"- Task: {task} (Priority: {priority})")
+            if time_bound == 'yes':
+                print("- This task requires immediate attention today!")
+            else:
+                print("- This task does not require immediate attention.")
+        case 'medium':
+            print(f"- Task: {task} (Priority: {priority})")
+            if time_bound == 'yes':
+                print("- This task requires immediate attention today!")
+            else:
+                print("- This task does not require immediate attention.")
+        case 'low':
+            print(f"- Task: {task} (Priority: {priority})")
+            if time_bound == 'yes':
+                print("- This task requires immediate attention today!")
+            else:
+                print("- This task does not require immediate attention.")
+        case _:
+            print("- Invalid priority level entered.")
 
-# Step 3: Check if task is time-bound
-time_bound = input("Is the task time-bound? (yes or no): ")
+if __name__ == "__main__":
+    main()
