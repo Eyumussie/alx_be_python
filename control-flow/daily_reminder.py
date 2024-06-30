@@ -29,6 +29,7 @@ def main():
                 reminder += " This task is time-bound and requires immediate attention today!"
         case _:
             print("- Invalid priority level entered.")
-
+            
+      print(reminder)
 if __name__ == "__main__":
     main()
