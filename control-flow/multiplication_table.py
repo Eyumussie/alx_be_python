@@ -6,5 +6,8 @@ def print_multiplication_table():
             print(f"{number} * {i} = {product}")
     except ValueError:
         print("Please enter a valid number.")
+        for i in range(1, 10 + 1):
+        product = number * i
+        print(f"{number} * {i} = {product}")
 if __name__ == "__main__":
     print_multiplication_table()
