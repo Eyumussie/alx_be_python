@@ -4,20 +4,29 @@ def display_menu():
     print("2. Remove Item")
     print("3. View List")
     print("4. Exit")
-item = input("Enter the item  to add: ")
+
+    
+item = input("Enter the item to add: ")
+
+
 def main():
     shopping_list = []
     while True:
         display_menu()
         choice = input("Enter your choice: ")
+
         if choice == '1':
+            # Prompt for and add an item
             shopping_list.append(item)
-            print(f"'{item}' has been added to the shopping list.")
+            pass
         elif choice == '2':
-                shopping_list.remove(item)
-                print(f"'{item}' has been removed from the shopping list.")
+            # Prompt for and remove an item
+            shopping_list.remove(item)
+            pass
         elif choice == '3':
+            # Display the shopping list
             print(shopping_list)
+            pass
         elif choice == '4':
             print("Goodbye!")
             break
