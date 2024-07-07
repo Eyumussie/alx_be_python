@@ -17,7 +17,7 @@ def main():
                 shopping_list.remove(item)
                 print(f"'{item}' has been removed from the shopping list.")
         elif choice == '3':
-            print(item:)
+            print(shopping_list)
         elif choice == '4':
             print("Goodbye!")
             break
