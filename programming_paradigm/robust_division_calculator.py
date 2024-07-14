@@ -1,4 +1,4 @@
- def safe_divide(numerator, denominator):
+def safe_divide(numerator, denominator):
     try:
         num = float(numerator)
         denom = float(denominator)
@@ -8,10 +8,6 @@
         return f"The result of the division is {result}"
     except ValueError:
         return "Error: Please enter numeric values only."
-
-  import sys
-from robust_division_calculator import safe_divide
-
 def main():
     if len(sys.argv) != 3:
         print("Usage: python main.py <numerator> <denominator>")
