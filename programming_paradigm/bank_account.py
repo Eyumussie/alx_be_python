@@ -14,7 +14,9 @@ class BankAccount:
 
     def display_balance(self):
         print(f"Current Balance: ${self._account_balance:.2f}")
-      import sys
+
+
+import sys
 from bank_account import BankAccount
 
 def main():
@@ -24,10 +26,9 @@ def main():
         print("Usage: python main-0.py <command>:<amount>")
         print("Commands: deposit, withdraw, display")
         sys.exit(1)
-      command, *params = sys.argv[1].split(':')
+
+    command, *params = sys.argv[1].split(':')
     amount = float(params[0]) if params else None
-
-
 
     if command == "deposit" and amount is not None:
         account.deposit(amount)
