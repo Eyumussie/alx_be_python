@@ -1,5 +1,4 @@
-class safe_divide:
-  def safe_divide(numerator, denominator):
+ def safe_divide(numerator, denominator):
     try:
         num = float(numerator)
         denom = float(denominator)
